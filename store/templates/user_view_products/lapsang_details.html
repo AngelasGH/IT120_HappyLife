@@ -1,0 +1,43 @@
+{% extends 'user/home.html' %}
+{% load static %}
+{% block content %}
+    <section id="view_prod">
+        <div class="container">
+            <a class="view_link" href="{% url 'user_lapsang' %}"><button class="back-btn py-5">Back</button></a>
+        <div class="row">
+            <div class="col-lg-6 pt-5">
+                <img src="{% static 'images/products/2.png' %}" class="img-fluid" alt="Responsive image">
+            </div>
+            <div class="col-lg-6 pt-5">
+                <p>HappyLife</p>
+				<h6><strong>Lapsang Souchong Tea</strong></h6>
+				<h6>₱ 450.00</h6>
+
+                <a class="ratings" href="{% url 'user_lapsang' %}#reviews">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"> 1 review/s</i>
+
+                </a>
+                <br>
+                <p class="pt-4">Description</p>
+                <p>The Lapsang Souchong Tea is a smooth crisp character with the
+                    remarkable heady aroma of a pine and oak wood fire.
+
+                    <br><br>
+                    Benefits:<br>
+                        ● Cardiovascular health- increases blood flow as well as reducing
+                          the amount of bad cholesterol in the bloodstream.<br>
+                        ● Immune system- Lapsang tea is a great antioxidant which helps prevent infections.<br>
+                        ● Helps you drop coffee- the levels of caffeine in Lapsang tea make it a great
+                          if you are trying to stop drinking coffee.
+
+                </p>
+            </div>
+        </div>
+      </div>
+
+    </section>
+{% endblock content %}

@@ -1,0 +1,39 @@
+
+{% extends 'store/home.html' %}
+{% load static %}
+{% block content %}
+    <section id="register">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-12 d-flex justify-content-center">
+                    <p><strong>Register</strong></p>
+                </div>
+                <div class="col-lg-4">
+                <div class="col-lg-12 py-2">
+                        <input type="text" class="form-control" placeholder="Juan">
+                </div>
+                <div class="col-lg-12 py-2">
+                        <input type="text" class="form-control" placeholder="Dela Crush">
+                </div>
+                <div class="col-lg-12 py-2">
+                        <input type="email" class="form-control" placeholder="juan.delacrush@gmail.com">
+                </div>
+                <div class="col-lg-12 py-2">
+                        <input type="password" class="form-control" placeholder="●●●●●●●●●●●●">
+                </div>
+                <div class="col-lg-12 py-2">
+                        <input type="password" class="form-control" placeholder="●●●●●●●●●●●●">
+                </div>
+
+                <div class="col-lg-12 d-flex justify-content-center py-4">
+                    <a href="{% url 'user_home' %}"><button class="btn-auth">Create An Account</button></a>
+                </div>
+                <div class="col-lg-12 d-flex justify-content-center py-4">
+                    <p>Already have an account? <a style="font-size: 15px !important; color: #0097a7!important;"
+                                                   href="{% url 'login' %}">Login</a></p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock content %}

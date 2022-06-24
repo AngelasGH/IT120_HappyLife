@@ -1,0 +1,94 @@
+{% extends 'user/home.html' %}
+{% load static %}
+{% block content %}
+<section id="to_receive">
+
+        <div class="container py-5">
+            <div class="row">
+                    <div class="row col-lg-3">
+                            <div class="col-lg-3">
+                                <img class="img-fluid rounded-circle" src="{% static 'images/persons/Juan.png' %}">
+                            </div>
+                            <div class="col-lg-9">
+                               <p>Juan Dela Crush</p>
+                                <br>
+                                <a class="view_link pt-3" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"><p style="font-size:15px;"><strong>My Account</strong></p></a>
+
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <li><a class="dropdown-item" href="{% url 'profile' %}">Profile</a></li>
+                                        <li><a class="dropdown-item" href="#"><strong>Banks & Cards</strong></a></li>
+                                        <li><a class="dropdown-item" href="{% url 'address' %}">Address</a></li>
+                                        <li><a class="dropdown-item" href="{% url 'change_password' %}">Change Password</a></li>
+                                      </ul>
+
+
+                                <a class="view_link" href="{% url 'to_receive' %}"><p>My Purchase</p></a>
+                                <a class="view_link" href="{% url 'home' %}"><p>Logout</p></a>
+                            </div>
+                    </div>
+                    <div class="col-lg-9 ">
+                        <div class="row col-lg-12 py-3 px-2">
+                            <div class="col-lg-6 pt-2"><p>My Credit/Debit Card</p></div>
+                            <div class="col-lg-6 pt-2"><button type="button" data-toggle="modal" data-target="#modal-credit-form" class="btn-active">+ Add New Credit/Debit Card</button>
+                        </div>
+
+                         <div class="row col-lg-12 py-5 px-5">
+                                 You don’t have credit cards yet.
+                        </div>
+                        <div class="row col-lg-12 py-3 px-2 pt-5">
+                            <div class="col-lg-6 pt-2">Bank</p></div>
+                            <div class="col-lg-6 pt-2"><button class="btn-active">+ Add New Bank Account/button>
+                        </div>
+                        <div class="row col-lg-12 py-5 px-5">
+                                 You don’t have credit cards yet.
+                        </div>
+                    </div>
+
+            <!-- Modal -->
+        <div class="modal fade" id="modal-credit-form" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <div class="row d-flex justify-content-center">
+                <div class="col-lg-12 d-flex justify-content-center">
+                    <p>Add A New Credit Card</p>
+                </div>
+                <div class="alert alert-warning" role="alert">
+                     $1.00 will be deducted as verification fee. It will be refunded to you within 5 days.
+                </div>
+
+                <div class="col-lg-12 py-2">
+                        <input type="text" class="form-control" placeholder="Juan Dela Crush">
+                </div>
+                <div class="col-lg-12 py-2">
+                        <input type="email" class="form-control" placeholder="10458521145872">
+                </div>
+                <div class="col-lg-6 py-2">
+                        <input type="password" class="form-control" placeholder="05/23">
+                </div>
+                <div class="col-lg-6 py-2">
+                        <input type="password" class="form-control" placeholder="157">
+                </div>
+                <div class="col-lg-12 py-2">
+                        <input type="password" class="form-control" placeholder="089 Saging Street, Barangay Unggoy, Butuan City">
+                </div>
+                <div class="col-lg-12 py-2">
+                        <input type="password" class="form-control" placeholder="8600">
+                </div>
+
+                <div class="row pt-5 d-flex justify-content-end">
+                    <div class="col-lg-3  col-md-6 col-3">
+                        <button  type="button" class="btn-buy-now" data-dismiss="modal">cancel</button>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-3">
+                        <a href="{% url 'banks_cards_new' %}"><button  class="btn-add-to-cart">Submit</button></a>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+</section>
+{% endblock content %}

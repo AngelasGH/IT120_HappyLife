@@ -1,0 +1,59 @@
+{% extends 'user/home.html' %}
+{% load static %}
+{% block content %}
+    <section id="faqs">
+        <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 pt-5">
+                        <ul class="faqs-ul">Shipping</ul>
+                            <a class="faqs-font-size" data-toggle="collapse" href="#toggle_me">What shipping method are available?</a>
+                            <div class="collapse" id="toggle_me">
+                            <p class="faqs-ul">We only deliver through J&T Express.</p>
+                            </div>
+                    </div>
+
+                    <div class="col-lg-12">
+                            <a class="faqs-font-size" data-toggle="collapse" href="#toggle_me1">How long will it take to get my package?</a>
+                            <div class="collapse" id="toggle_me1">
+                            <p class="faqs-ul">Metro Manila Deliveries will take 5-7 business days.
+                                                   <br> Provincial Deliveries will take 7-10 business days.</p>
+                            </div>
+                    </div>
+
+                    <div class="col-lg-12 pt-3">
+                        <ul class="faqs-ul">Orders</ul>
+                        <a class="faqs-font-size" data-toggle="collapse" href="#toggle_me2">Can I cancel or change my order?</a>
+                        <div class="collapse" id="toggle_me2">
+                            <p class="faqs-ul">All sales are final.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12">
+                            <a class="faqs-font-size" data-toggle="collapse" href="#toggle_me3">My items arrived damaged, what should I do?</a>
+                            <div class="collapse" id="toggle_me3">
+                            <p class="faqs-ul">Please email us immediately within 24-48 hours with your order
+                                number and some photos of the damaged product/s at contact@happylife.com</p>
+                            </div>
+                    </div>
+
+                     <div class="col-lg-12">
+                            <a class="faqs-font-size" data-toggle="collapse" href="#toggle_me4">I received incorrect
+                                item/s what should I do?</a>
+                            <div class="collapse" id="toggle_me4">
+                            <p class="faqs-ul">Please email us within 24-48 hours with your order number and some
+                                photos of the damaged product/s at contact@happylife.com</p>
+                            </div>
+                    </div>
+
+                    <div class="col-lg-12 pt-3">
+                        <ul class="faqs-ul">Payment</ul>
+                        <a class="faqs-font-size" data-toggle="collapse" href="#toggle_me5">What are your payment options?</a>
+                        <div class="collapse" id="toggle_me5">
+                            <p class="faqs-ul">We accept Visa, Mastercard, Gcash and Cash-On Delivery.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+	</section>
+{% endblock content %}

@@ -1,0 +1,66 @@
+{% extends 'user/home.html' %}
+{% load static %}
+{% block content %}
+<section id="to_receive">
+
+        <div class="container py-5">
+            <div class="row">
+                    <div class="row col-lg-3">
+                            <div class="col-lg-3">
+                                <img class="img-fluid rounded-circle" src="{% static 'images/persons/Juan.png' %}">
+                            </div>
+                            <div class="col-lg-9">
+                               <p>Juan Dela Crush</p>
+                               <br>
+                                <a class="view_link pt-3" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"><p style="font-size: 15px;"><strong>My Account</strong></p></a>
+
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <li><a class="dropdown-item" href="{% url 'profile' %}">Profile</a></li>
+                                        <li><a class="dropdown-item" href="{% url 'banks' %}">Banks & Cards</a></li>
+                                        <li><a class="dropdown-item" href="{% url 'address' %}"><strong>Address</strong></a></li>
+                                        <li><a class="dropdown-item" href="{% url 'change_password' %}">Change Password</a></li>
+                                      </ul>
+
+
+                                <a class="view_link" href="{% url 'to_receive' %}"><p>My Purchase</p></a>
+                                <a class="view_link" href="{% url 'home' %}"><p>Logout</p></a>
+                            </div>
+                    </div>
+                    <div class="col-lg-9">
+                        <div class="row col-lg-12 py-3 px-2">
+                            <div class="col-lg-6 pt-2"><p style="font-size: 15px;">My Addresses</p></div>
+                            <div class="col-lg-6 pt-2"><button class="btn-active">+ Add New Address</button>
+                        </div>
+
+                         <div class="row col-lg-12 py-5 px-1">
+                                 <div class="col-lg-3">
+                                     <div class="col-lg-12">
+                                         <p>Full Name</p>
+                                         <p>Phone</p>
+                                         <p>Address</p>
+                                     </div>
+
+                                 </div>
+                                 <div class="col-lg-6">
+                                     <div class="col-lg-12">
+                                         <p>Juan Dela Crush</p>
+                                         <p>(+63) 9787451404</p>
+                                         <p>89 Saging Street, Barangay Unggoy,Butuan City, 8600</p>
+                                     </div>
+
+                                 </div>
+                                <div class="col-lg-3">
+                                     <div class="col-lg-12">
+                                         <p><u>Edit</u></p>
+                                     </div>
+
+                                 </div>
+                        </div>
+
+                    </div>
+
+
+
+
+</section>
+{% endblock content %}

@@ -1,0 +1,35 @@
+{% extends 'user/home.html' %}
+{% load static %}
+{% block content %}
+   <section id="contact_us">
+       <div class="container">
+           <div class="row d-flex justify-content-end">
+                <div class="col-lg-6 d-flex justify-content-center">
+                   <h2><span>Contact Us</span><br>We Would love to hear from you.</h2>
+                    <br>
+                </div>
+            <form class="row col-lg-12 d-flex justify-content-end">
+              <div class="form-row col-lg-6 d-flex justify-content-end">
+                    <div class="col-lg-6 pt-2">
+                      <input type="text" class="form-control" placeholder="Full Name">
+                    </div>
+                    <div class="col-lg-6 pt-2">
+                      <input type="text" class="form-control" placeholder="Email">
+                    </div>
+                    <div class="col-lg-12 pt-2">
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Messege here..."></textarea>
+                    </div>
+                    <div class="col-lg-12 pt-2">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Save my name, email, and website
+                            in this browser for the next time I comment.</label>
+                    </div>
+                  <div class="col-lg-12 pt-5 d-flex justify-content-center">
+                    <button type="submit" class="btn-sn">Send Email</button>
+                  </div>
+              </div>
+            </form>
+           </div>
+       </div>
+   </section>
+{% endblock content %}

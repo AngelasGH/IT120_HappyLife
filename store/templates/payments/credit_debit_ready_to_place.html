@@ -1,0 +1,45 @@
+{% extends 'user/home.html' %}
+{% load static %}
+{% block content %}
+    <section id="signin-form" >
+
+        <div class="container">
+            <a href="{% url 'user_cart' %}"><button class="back-btn py-5">Back</button></a>
+            <div class="row pt-3">
+                <p class="col-lg-12 d-flex justify-content-start" ><strong>Payment Method</strong></p>
+            </div>
+            <br>
+            <div class="row pt-3">
+                <div class="col-lg-3 pt-3 ">
+                    <a href="{% url 'cash_on' %}"><button  class="btn-payment">Cash-on Delivery</button></a>
+                </div>
+                <div class="col-lg-3 pt-3">
+                    <button  class="btn-active">Credit/Debit Card</button>
+                </div>
+                <div class="col-lg-3 pt-3">
+                    <a href="{% url 'e_wallet' %}"><button  class="btn-payment">E-Wallet</button></a>
+                </div>
+            </div>
+            <br>
+            <div class="row pt-5">
+                <div class="col-lg-3">
+                    <p>BPI Debit Card</p>
+                </div>
+            </div>
+            <br><br>
+            <div class="col-lg-12 pt-5 pb-5">
+                         <div class="d-flex justify-content-end pt-5 pb-5">
+                            <div class="p-2 bd-highlight">
+                                <h2 style="font-size: 20px">Total( 2 Items): ₱ 698.00</h2>
+                            </div>
+                            <div class="p-2 bd-highlight">
+                                <a href="{% url 'to_receive' %}"><button  class="btn-add-to-cart">Place Order</button></a>
+                            </div>
+                        </div>
+                </div>
+
+
+
+        </div>
+    </section>
+{% endblock content %}

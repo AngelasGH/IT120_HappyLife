@@ -1,0 +1,89 @@
+{% extends 'user/home.html' %}
+{% load static %}
+{% block content %}
+    <section id="signin-form" >
+
+        <div class="container pt-5">
+            <div class="container">
+            <a class="view_link" href="{% url 'user_cart' %}"><button class="back-btn py-5">Back</button></a>
+            <div class="row pt-3">
+                <p class="col-lg-12 d-flex justify-content-start" ><strong>Payment Method</strong></p>
+            </div>
+            <br>
+            <div class="row pt-3">
+                <div class="col-lg-3 pt-3 ">
+                    <a href="{% url 'cash_on' %}"><button  class="btn-payment">Cash-on Delivery</button></a>
+                </div>
+                <div class="col-lg-3 pt-3">
+                    <button  class="btn-active">Credit/Debit Card</button>
+                </div>
+                <div class="col-lg-3 pt-3">
+                    <a href="{% url 'e_wallet' %}"><button  class="btn-payment">E-Wallet</button></a>
+                </div>
+            </div>
+            <br>
+            <div class="row pt-5">
+                <div class="col-lg-3 pt-3">
+                    <button type="button" data-toggle="modal" data-target="#modal-credit-form" class="btn-add-credit">+ Credit/Debit Card</button>
+                </div>
+            </div>
+            <br><br>
+            <div class="col-lg-12 pt-5 pb-5">
+                         <div class="d-flex justify-content-end pt-5 pb-5">
+                            <div class="p-2 bd-highlight">
+                                <h2 style="font-size: 20px">Total( 2 Items): ₱ 698.00</h2>
+                            </div>
+                            <div class="p-2 bd-highlight">
+                                <button type="button" class="btn-add-to-disabled" disabled>Place Order</button>
+                            </div>
+                        </div>
+                </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="modal-credit-form" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <div class="row d-flex justify-content-center">
+                <div class="col-lg-12 d-flex justify-content-center">
+                    <p>Add A New Credit Card</p>
+                </div>
+                <div class="alert alert-warning" role="alert">
+                     $1.00 will be deducted as verification fee. It will be refunded to you within 5 days.
+                </div>
+
+                <div class="col-lg-12 py-2">
+                        <input type="text" class="form-control" placeholder="Juan Dela Crush">
+                </div>
+                <div class="col-lg-12 py-2">
+                        <input type="email" class="form-control" placeholder="10458521145872">
+                </div>
+                <div class="col-lg-6 py-2">
+                        <input type="password" class="form-control" placeholder="05/23">
+                </div>
+                <div class="col-lg-6 py-2">
+                        <input type="password" class="form-control" placeholder="157">
+                </div>
+                <div class="col-lg-12 py-2">
+                        <input type="password" class="form-control" placeholder="089 Saging Street, Barangay Unggoy, Butuan City">
+                </div>
+                <div class="col-lg-12 py-2">
+                        <input type="password" class="form-control" placeholder="8600">
+                </div>
+
+                <div class="row pt-5 d-flex justify-content-end">
+                    <div class="col-lg-3  col-md-6 col-3">
+                        <button  type="button" class="btn-buy-now" data-dismiss="modal">cancel</button>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-3">
+                        <a href="{% url 'credit_debit_ready_to_place' %}"><button  class="btn-add-to-cart">Submit</button></a>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+</section>
+{% endblock content %}
