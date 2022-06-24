@@ -54,7 +54,7 @@
                         </div>
                 </div>
                 <div class="col-lg-2 pt-3">
-                    <p>₱ {{item.get_total}}</p>
+                    <p>₱ {{item.get_total|floatformat:2}}</p>
                 </div>
                 <div class="col-lg-2 pt-3">
                     <span data-product="{{item.product.id}}" data-action="delete" class="span update-cart">delete</span>
