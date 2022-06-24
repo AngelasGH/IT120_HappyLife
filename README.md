@@ -1,8 +1,5 @@
 # IT120_HappyLife
-        
-    HappyLife Sample Video on how it works:
-        
-    
+
     This is my final project for IT120 course
     Name:  Angelica Salon Sotis
     Course:  IT120
@@ -21,9 +18,11 @@
     How does it work: 
     Create superuser to login to the admin.
     You should login to the admin before using the website.
+    You cannot perform CRUD if you are an Anonymous User.
     
     If you have question just contact me with the ff.
     Facebook Account: Angelica Sotis
     Gmail: angelica.sotis020202@gmail.com
            angelica.sotis@carsu.edu.ph
-    
+
+
