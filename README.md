@@ -16,5 +16,6 @@
     
     How does it work: 
     Create superuser to login to the admin.
-    You should login to the admin
+    You should login to the admin before using the website.
     
+    Questing 
