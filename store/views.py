@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import JsonResponse
 from .models import *
 import json
@@ -183,11 +183,15 @@ def updateItem(request):
     if action == 'add':
         orderItem.quantity = (orderItem.quantity + 1)
     elif action == 'remove':
-        orderItem.quantity = (orderItem.quantity + 1)
+        orderItem.quantity = (orderItem.quantity - 1)
 
     orderItem.save()
 
     if orderItem.quantity <= 0:
         orderItem.delete()
 
+    if action == 'delete':
+        orderItem.delete()
+
     return JsonResponse('item was added', safe=False)
+

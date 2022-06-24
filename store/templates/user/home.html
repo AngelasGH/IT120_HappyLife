@@ -124,36 +124,6 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="{% static 'js/cart.js' %}"></script>
         <script>
-           	$(document).ready(function(){
-		    $('.count').prop('disabled', true);
-   			$(document).on('click','.plus',function(){
-				$('.count').val(parseInt($('.count').val()) + 1 );
-    		});
-        	$(document).on('click','.minus',function(){
-    			$('.count').val(parseInt($('.count').val()) - 1 );
-    				if ($('.count').val() == 0) {
-						$('.count').val(1);
-					}
-    	    	});
- 		});
-
- 		$(function () {
- 		    $('a[href="#search"]').on('click', function(event){
- 		        event.preventDefault();
- 		        $('#search').addClass('open');
- 		        $('#search > form > input[type="search"]').focus();
- 		    });
-
- 		    $('#search, #search button.close').on('click', function(event) {
- 		        if(event.target == this || event.target.className == 'close') {
- 		            $(this).removeClass('open');
- 		            }
- 		        });
- 		    });
-        $(".myBox").click(function() {
-          window.location = $(this).find("a").attr("href");
-          return false;
-        });
         </script>
 
 </body>

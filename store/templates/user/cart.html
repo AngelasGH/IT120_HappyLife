@@ -49,16 +49,16 @@
                 </div>
                 <div class="col-lg-2 pt-3">
                         <div class="qty">
-                            <span class="minus bg-dark">-</span>
-                            <input type="number" class="count" name="qty" value="{{ item.quantity }}">
-                            <span class="plus bg-dark">+</span>
+                            <span data-product="{{item.product.id}}" data-action="remove" class="minus bg-dark update-cart">-</span>
+                            <input type="number" class="count" name="qty" value="{{ item.quantity}}">
+                            <span data-product="{{item.product.id}}" data-action="add" class="plus bg-dark update-cart">+</span>
                         </div>
                 </div>
                 <div class="col-lg-2 pt-3">
                     <p>₱ {{item.get_total}}</p>
                 </div>
                 <div class="col-lg-2 pt-3">
-                    <a href="#deletion">Delete</a>
+                    <span data-product="{{item.product.id}}" data-action="delete" class="update-cart">delete</span>
                 </div>
             </div>
             {% endfor %}
