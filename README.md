@@ -15,9 +15,10 @@
     Intention: 
     This is to perform basic CRUD application in Django namely Create, Read, Update, and Delete.
     
-    How does it work: 
-    Create superuser to login to the admin.
+    How does it work:
+    Don't forget to install pillow "pip install pillow"
     You should login to the admin before using the website.
+    In loging in use  username: AngelasGH password: 040101 
     You cannot perform CRUD if you are an Anonymous User.
     
     If you have question just contact me with the ff.
