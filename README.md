@@ -19,6 +19,11 @@
     Don't forget to install pillow "pip install pillow"
     You should login to the admin before using the website.
     In loging in use  username: AngelasGH password: 040101 
+    
+    If you want to create a new superuser:
+        1. perform 'python manage.py createsuperuser'
+        2. After you create superuser, inside STORE goto Customers
+        3. Then ADD CUSTOMER (this is to officially use the store as a customer)
     You cannot perform CRUD if you are an Anonymous User.
     
     If you have question just contact me with the ff.
