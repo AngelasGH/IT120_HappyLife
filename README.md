@@ -22,8 +22,9 @@
     
     If you want to create a new superuser:
         1. perform 'python manage.py createsuperuser'
-        2. After you create superuser, inside STORE goto Customers
+        2. After you create superuser login to admin, after logging in, inside STORE goto Customers
         3. Then ADD CUSTOMER (this is to officially use the store as a customer)
+        4. refresh the HappyLife website or paste the url http://127.0.0.1:8000/ 
     You cannot perform CRUD if you are an Anonymous User.
     
     If you have question just contact me with the ff.
